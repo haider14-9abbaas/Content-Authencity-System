@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI vs Human Detector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Upload Image / Video / Text to Detect</h2>
+    <form method="POST" enctype="multipart/form-data" action="/predict">
+        <input type="file" name="file" required>
+        <select name="file_type">
+            <option value="image">Image</option>
+            <option value="video">Video</option>
+            <option value="text">Text</option>
+        </select>
+        <button type="submit">Detect</button>
+    </form>
+</body>
+</html>
